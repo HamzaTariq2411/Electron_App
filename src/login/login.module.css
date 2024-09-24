@@ -1,0 +1,103 @@
+.loginContainer {
+  padding: 15px;
+  background-color: #121212;
+  color: #e0e0e0;
+  height: 331px;
+}
+.detailspan{
+  margin-bottom: 30px;
+}
+
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+.inputGroup label {
+  display: block;
+  margin-bottom: 5px;
+  color: #e0e0e0;
+}
+
+.domainInput,
+.passwordInput {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.domainInput input,
+.passwordInput input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #2e2e2e;
+  color: #e0e0e0;
+  transition: border-color 0.2s ease;
+}
+
+.domainInput span {
+  margin-left: 5px;
+  color: #e0e0e0;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forgotPassword {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}
+.buttongrp{
+  display: flex;
+  gap: 20px;
+}
+.btngrp {
+  padding: 8px 12px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #2e2e2e;
+  color: #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.btngrp:hover {
+  background-color: #3c3c3c;
+  border-color: #007bff;
+}
+
+.cancelButton {
+  background-color: #d9534f;
+  color: white;
+  border-color: #d43f3a;
+}
+
+.cancelButton:hover {
+  background-color: #c9302c;
+}
+
+.loginButton {
+  background-color: #5cb85c;
+  color: white;
+  border-color: #4cae4c;
+}
+
+.loginButton:hover {
+  background-color: #4cae4c;
+}
+
+.toggleButton {
+  position: absolute;
+  right: 10px;
+  color: #e0e0e0;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}

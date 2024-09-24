@@ -1,0 +1,120 @@
+.container {
+  width: 170px;
+  height: 100vh;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  padding: 20px;
+  padding-top: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.menuItem {
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.menuItem:hover {
+  background-color: #333;
+  transform: translateX(10px);
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+.menuItem i {
+  margin-right: 10px;
+}
+
+.bottomItems {
+  position: absolute;
+  bottom: 40px;
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+}
+
+.bottomItems .menuItem {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bottomItems .menuItem i {
+  font-size: 18px;
+}
+
+.closeBtn {
+  padding: 0.75rem;
+  background: linear-gradient(to right, #d1d5db, #9ca3af);
+  color: #111827;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s;
+  position:absolute;
+  right: 30px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.closeBtn:hover {
+  opacity: 0.9;
+}
+.active {
+  background-color: #4a4a4a;
+  box-shadow: inset 5px 0 10px rgba(0, 0, 0, 0.2);
+  transform: translateX(10px);
+}
+
+/* Modal overlay */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal box */
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Modal buttons */
+.modal button {
+  margin: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal button:first-of-type {
+  background-color: #d9534f; /* Red for Yes */
+  color: white;
+}
+
+.modal button:last-of-type {
+  background-color: #5bc0de; /* Blue for No */
+  color: white;
+}

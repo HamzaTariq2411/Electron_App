@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  height: 150px;
+}
+
+.screenshot-image {
+  width: 250px;
+  height: 150px;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.image-container img {
+  opacity: 1;
+}
+
+.controls {
+  position: relative;
+}
